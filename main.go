@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	os.Setenv("SLACK_BOT_TOKEN", "xoxb-5981424515030-6171364659808-54LEaDfPJxM87MS4MKYZCsGR")
-	os.Setenv("CHANNEL_ID", "C05V4F6QXKN")
+	os.Setenv("SLACK_BOT_TOKEN", "")
+	os.Setenv("CHANNEL_ID", "")
 	api := slack.New(os.Getenv("SLACK_BOT_TOKEN"))
 	channelArr := []string{os.Getenv("CHANNEL_ID")}
 	fileArr := []string{"adminer.php"}
